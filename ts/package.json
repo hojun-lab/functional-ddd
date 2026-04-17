@@ -1,0 +1,13 @@
+{
+  "name": "functional-ddd-ts",
+  "version": "1.0.0",
+  "description": "Domain Modeling Made Functional - TypeScript 구현",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
