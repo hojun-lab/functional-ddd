@@ -1,6 +1,8 @@
 package com.kalrap
 
 import com.kalrap.ordertaking.domain.CustomerId
+import com.kalrap.ordertaking.domain.QuantityType
+import com.kalrap.ordertaking.domain.WidgetCode
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

@@ -12,3 +12,5 @@ class UnitQuantity (val value: Int)
 
 @JvmInline
 value class KilogramQuantity (val value: Double)
+
+typealias QuantityType = Int
