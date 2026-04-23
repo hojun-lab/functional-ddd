@@ -1,0 +1,1 @@
+type ValidateOrder = (i: UnvalidatedOrder) => ValidatedOrder;

@@ -6,7 +6,6 @@ typealias CustomerInfo = Undefined
 typealias ShippingAddress = Undefined
 typealias BillingAddress = Undefined
 typealias OrderLine = Undefined
-typealias BillingAmount = Undefined
 
 class Order (
     val customerInfo: CustomerInfo,
@@ -14,5 +13,4 @@ class Order (
     val billingAddress: BillingAddress,
     val orderLines: List<OrderLine>,
     val amountToBill: BillingAmount,
-) {
-}
+) {}

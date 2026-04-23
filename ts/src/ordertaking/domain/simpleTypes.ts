@@ -10,6 +10,12 @@ class WidgetCode {
     constructor(readonly value: string) {}
 }
 
+declare const gizmoCode: unique symbol;
+class GizmoCode {
+    [gizmoCode]!: never;
+    constructor(readonly value: string) {}
+}
+
 declare const unitQuantity: unique symbol;
 class UnitQuantity {
     [unitQuantity]!: never;
@@ -21,3 +27,6 @@ class KilogramQuantity {
     [kilogramQuantity]!: never;
     constructor(readonly value: number) {}
 }
+
+type ProductCode = WidgetCode | GizmoCode;
+type OrderQuantity = UnitQuantity | KilogramQuantity;
