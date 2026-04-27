@@ -1,0 +1,9 @@
+package com.kalrap.ordertaking.events
+
+data class PlaceOrderEvents(
+    val acknowledgmentSent: AcknowledgmentSent,
+    val orderPlaced: OrderPlaced,
+    val billableOrderPlaced: BillableOrderPlaced,
+)
+
+data class

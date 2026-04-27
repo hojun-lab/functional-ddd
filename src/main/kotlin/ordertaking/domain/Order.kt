@@ -1,5 +1,6 @@
 package com.kalrap.ordertaking.domain
 
+import com.kalrap.ordertaking.common.Entity
 import com.kalrap.ordertaking.common.Undefined
 
 typealias CustomerInfo = Undefined
@@ -8,9 +9,13 @@ typealias BillingAddress = Undefined
 typealias OrderLine = Undefined
 
 class Order (
-    val customerInfo: CustomerInfo,
+    val orderId: OrderId,
+    val customerId: CustomerId,
+    val orderLines: List<OrderLine>,
     val shippingAddress: ShippingAddress,
     val billingAddress: BillingAddress,
-    val orderLines: List<OrderLine>,
     val amountToBill: BillingAmount,
-) {}
+) : Entity<OrderId>() {
+    override val id: OrderId
+        get() = orderId
+}
