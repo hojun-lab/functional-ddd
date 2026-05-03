@@ -75,7 +75,10 @@ type ProductCode = WidgetCode | GizmoCode;
 declare const unitQuantity: unique symbol;
 class UnitQuantity {
     [unitQuantity]!: never;
-    constructor(readonly value: number) {}
+    private constructor(readonly value: number) {
+        super();
+    }
+    static create(i: number): E.Either
 }
 
 declare const kilogramQuantity: unique symbol;
