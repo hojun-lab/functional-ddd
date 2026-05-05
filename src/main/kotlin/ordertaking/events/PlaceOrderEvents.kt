@@ -1,4 +1,4 @@
-package com.kalrap.ordertaking.events
+package com.rojojun.ordertaking.events
 
 data class PlaceOrderEvents(
     val acknowledgmentSent: AcknowledgmentSent,

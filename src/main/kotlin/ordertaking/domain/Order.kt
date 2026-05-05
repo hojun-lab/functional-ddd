@@ -1,7 +1,7 @@
-package com.kalrap.ordertaking.domain
+package com.rojojun.ordertaking.domain
 
-import com.kalrap.ordertaking.common.Entity
-import com.kalrap.ordertaking.common.Undefined
+import com.rojojun.ordertaking.common.Entity
+import com.rojojun.ordertaking.common.Undefined
 
 typealias CustomerInfo = Undefined
 typealias ShippingAddress = Undefined

@@ -1,4 +1,4 @@
-package com.kalrap.ordertaking.common
+package com.rojojun.ordertaking.common
 
 abstract class Entity<T: Any> {
     abstract val id: T

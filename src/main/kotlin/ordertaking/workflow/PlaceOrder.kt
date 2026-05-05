@@ -1,6 +1,6 @@
-package com.kalrap.ordertaking.workflow
+package com.rojojun.ordertaking.workflow
 
-import com.kalrap.ordertaking.domain.UnvalidatedOrder
-import com.kalrap.ordertaking.domain.ValidatedOrder
+import com.rojojun.ordertaking.domain.UnvalidatedOrder
+import com.rojojun.ordertaking.domain.ValidatedOrder
 
 typealias ValidateOrder = (UnvalidatedOrder) -> ValidatedOrder

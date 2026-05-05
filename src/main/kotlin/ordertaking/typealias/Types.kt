@@ -1,6 +1,6 @@
-package com.kalrap.ordertaking.`typealias`
+package com.rojojun.ordertaking.`typealias`
 
-import com.kalrap.ordertaking.common.Undefined
+import com.rojojun.ordertaking.common.Undefined
 
 typealias OrderId = Undefined
 typealias OrderLineId = Undefined

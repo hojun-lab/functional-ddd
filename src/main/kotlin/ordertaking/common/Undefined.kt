@@ -1,3 +1,3 @@
-package com.kalrap.ordertaking.common
+package com.rojojun.ordertaking.common
 
 interface Undefined

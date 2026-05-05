@@ -1,4 +1,4 @@
-package com.kalrap.ordertaking.domain
+package com.rojojun.ordertaking.domain
 
 data class UnvalidatedOrder(
     val orderId: String,
