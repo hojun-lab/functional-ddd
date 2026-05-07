@@ -5,5 +5,3 @@ data class PlaceOrderEvents(
     val orderPlaced: OrderPlaced,
     val billableOrderPlaced: BillableOrderPlaced,
 )
-
-data class

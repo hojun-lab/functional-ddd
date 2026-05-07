@@ -1,4 +1,4 @@
-package com.kalrap.ordertaking.domain
+package com.rojojun.ordertaking.common
 
 // 기본 원시타입 래퍼
 @JvmInline value class CustomerId (val value: Int)
@@ -31,7 +31,10 @@ package com.kalrap.ordertaking.domain
 }
 
 // 주문 수량
-@JvmInline value class UnitQuantity (val value: Int) {
+@JvmInline value class UnitQuantity private constructor (val value: Int) {
+    companion object {
+        operator fun invoke(i: Int):
+    }
     init {
         require(value in 1..1000) { "UnitQuantity cannot be greater than 1000" }
     }
@@ -59,9 +62,23 @@ sealed interface OrderQuantity {
     }
 }
 
+@JvmInline
+value class EnvelopeContents ( val value: String )
+
+@JvmInline
+value class InvoiceId()
+
 sealed interface ProductCode {
     @JvmInline value class Widget(val code: WidgetCode): ProductCode
     @JvmInline value class Gizmo(val code: GizmoCode): ProductCode
 }
 
-typealias QuantityType = Int
+sealed interface CategorizedMail {
+    data class QuoteForm(): CategorizedMail
+    data class OrderForm(): CategorizedMail
+}
+
+sealed interface InvoiceInfo {
+    data class UnpaidInvoiceInfo(): InvoiceInfo
+    data class PaidInvoiceInfo(): InvoiceInfo
+}

@@ -1,14 +1,13 @@
 package com.rojojun.ordertaking.domain
 
-import com.rojojun.ordertaking.common.Entity
-import com.rojojun.ordertaking.common.Undefined
+import com.rojojun.ordertaking.common.*
 
 typealias CustomerInfo = Undefined
 typealias ShippingAddress = Undefined
 typealias BillingAddress = Undefined
 typealias OrderLine = Undefined
 
-class Order (
+class Order(
     val orderId: OrderId,
     val customerId: CustomerId,
     val orderLines: List<OrderLine>,

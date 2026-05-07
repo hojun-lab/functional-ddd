@@ -1,9 +1,5 @@
 package com.rojojun
 
-import com.rojojun.ordertaking.domain.CustomerId
-import com.rojojun.ordertaking.domain.QuantityType
-import com.rojojun.ordertaking.domain.WidgetCode
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
