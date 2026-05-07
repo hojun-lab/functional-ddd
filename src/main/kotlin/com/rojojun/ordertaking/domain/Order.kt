@@ -5,7 +5,6 @@ import com.rojojun.ordertaking.common.*
 typealias CustomerInfo = Undefined
 typealias ShippingAddress = Undefined
 typealias BillingAddress = Undefined
-typealias OrderLine = Undefined
 
 class Order(
     val orderId: OrderId,
@@ -17,4 +16,15 @@ class Order(
 ) : Entity<OrderId>() {
     override val id: OrderId
         get() = orderId
+}
+
+class OrderLine(
+    val orderLineId: OrderLineId,
+    val orderId: OrderId,
+    val productCode: ProductCode,
+    val orderQuantity: OrderQuantity,
+    val price: Price,
+) : Entity<OrderLineId>() {
+    override val id: OrderLineId
+        get() = orderLineId
 }

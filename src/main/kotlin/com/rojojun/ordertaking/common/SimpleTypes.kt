@@ -66,19 +66,14 @@ sealed interface OrderQuantity {
 value class EnvelopeContents ( val value: String )
 
 @JvmInline
-value class InvoiceId()
+value class InvoiceId ( val value: String )
 
 sealed interface ProductCode {
     @JvmInline value class Widget(val code: WidgetCode): ProductCode
     @JvmInline value class Gizmo(val code: GizmoCode): ProductCode
 }
 
-sealed interface CategorizedMail {
-    data class QuoteForm(): CategorizedMail
-    data class OrderForm(): CategorizedMail
-}
+sealed interface PlaceOrderError
 
-sealed interface InvoiceInfo {
-    data class UnpaidInvoiceInfo(): InvoiceInfo
-    data class PaidInvoiceInfo(): InvoiceInfo
-}
+@JvmInline
+value class ValidationError(val value: String): PlaceOrderError
